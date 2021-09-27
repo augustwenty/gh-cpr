@@ -3,11 +3,4 @@ set -e
 
 echo "Hello gh-cpr!"
 
-if [[ -z "${PROJECT_NAME}" ]]; then
-  echo "PROJECT_NAME environment variable not set... cannot continue!"
-  exit 1
-else
-  APP="${PROJECT_NAME}"
-fi
-
-gh pr create -a @me -f -p $APP; gh pr view --web
+gh pr create -a @me -f; gh pr view --web
