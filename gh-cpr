@@ -3,4 +3,4 @@ set -e
 
 echo "Hello gh-cpr!"
 
-gh pr create -a @me -f; gh pr view --web
+gh pr create; gh pr view --web
